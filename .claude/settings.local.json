@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/index.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(npx serve:*)",
+      "WebSearch",
+      "Bash(node -e ':*)",
+      "Read(//c/Users/Palak/Desktop/Chitragupta_website/**)",
+      "Read(//c/Users/Palak/Desktop/CG_code_ts/**)",
+      "Bash(npm run:*)",
+      "Bash(cp -r \"C:\\\\Users\\\\Palak\\\\Desktop\\\\Chitragupta_website\\\\dist\" \"C:\\\\Users\\\\Palak\\\\Desktop\\\\finalportfolio - Copy - Copy\\\\Palak-agrawal-portfolio\\\\chitragupta\")",
+      "Bash(cp -r \"C:\\\\Users\\\\Palak\\\\Desktop\\\\CG_code_ts\\\\dist\" \"C:\\\\Users\\\\Palak\\\\Desktop\\\\finalportfolio - Copy - Copy\\\\Palak-agrawal-portfolio\\\\cgcode\")",
+      "Bash(rm -rf cgcode)",
+      "Bash(cp -r \"C:\\\\Users\\\\Palak\\\\Desktop\\\\CG_code_ts\\\\dist\" cgcode)",
+      "Bash(curl -s -o NUL -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(gh api *)",
+      "PowerShell(gh api repos/yougotpalaked/Palak-agrawal-portfolio/pages)",
+      "Bash(curl -sS -L --tls-max 1.2 https://yougotpalaked.github.io/Palak-agrawal-portfolio/ -o /tmp/gh-pages.html)",
+      "Read(//tmp/**)",
+      "PowerShell($src = \"C:\\\\Users\\\\Palak\\\\Desktop\\\\Palak-agrawal-portfolio\"; $size = \\(Get-ChildItem $src -Recurse -Force -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum\\).Sum; \"{0:N1} MB\" -f \\($size / 1MB\\))",
+      "Bash(git lfs *)",
+      "PowerShell($src = \"C:\\\\Users\\\\Palak\\\\Desktop\\\\Palak-agrawal-portfolio\"; $dst = \"C:\\\\Users\\\\Palak\\\\Desktop\\\\Palak_UX-UI_Portfolio\"; if \\(Test-Path $dst\\) { Write-Host \"ERROR: Destination already exists\"; exit 1 }; robocopy $src $dst /E /XD .git node_modules /NFL /NDL /NJH /NJS /NC /NS; if \\($LASTEXITCODE -le 7\\) { Write-Host \"Copy OK \\(robocopy exit $LASTEXITCODE\\)\" } else { Write-Host \"Copy FAILED \\(exit $LASTEXITCODE\\)\" })"
+    ]
+  }
+}
